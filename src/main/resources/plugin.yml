@@ -1,0 +1,7 @@
+name: MySimpleHelp
+version: @version@-@apitype@-@apiversion@
+description: A simple plugin to display custom help messages
+authors: [Paul Vogel]
+website: https://github.com/pavog/mysimplehelp
+
+main: me.paulvogel.mysimplehelp.MySimpleHelp
