@@ -15,5 +15,6 @@
 /.project
 
 # custom
+/config/
 /testserver/
 /final/

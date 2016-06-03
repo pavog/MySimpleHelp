@@ -1,9 +1,13 @@
 command:
+  # The main command /<command>
   name: "help"
+  # The permission for the command
   permission: "help"
+  # The description for the command (used in command lists)
   description: "You need help? Use this command!"
+  # The usage for the command (also used in command lists)
   usage: "/help <page>"
-  nopermission: "&cYou do not have the permission to do this!"
+  # The aliases for the command (you can also use the listed aliases instead of the main command above)
   aliases:
     - "helpme"
     - "simplehelp"
@@ -11,15 +15,17 @@ command:
 messages:
   nopages: "&cNo pages were found..."
   invalid: "&cThe page number has to be a valid integer."
-  notfound: "&cThe requested page number was not found."
+  notfound: "&cThe requested page number could not be found."
+  nopermission: "&cYou do not have the permission to do this!"
+# Create custom pages here
 pages:
   page-1:
-    - "&b     ----- &f[ &lHelp &r&f] &b-----     "
+    - "&b     ---------- &f[ &lHelp &r&f] &b----------     "
     - "&f&o  This is an example of the help &r&b&opage 1"
     - "&f&o  You can also try the second help page &r&b&o/help 2"
-    - "&b     ----- &f[ &lHelp &r&f] &b-----     "
+    - "&b     ---------- &f[ &lHelp &r&f] &b----------     "
   page-2:
-    - "&b     ----- &f[ &lHelp 2 &r&f] &b-----     "
+    - "&b     ---------- &f[ &lHelp 2 &r&f] &b----------     "
     - "&f&o  This is an example of the help &r&b&opage 2"
     - "&f&o  You can also try the second help page &r&b&o/help 1"
-    - "&b     ----- &f[ &lHelp 2 &r&f] &b-----     "
+    - "&b     ---------- &f[ &lHelp 2 &r&f] &b----------     "

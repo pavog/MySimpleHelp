@@ -20,7 +20,7 @@ public class HelpCommandExecutor extends BukkitCommand {
     @Override
     public boolean execute(CommandSender commandSender, String label, String[] arguments) {
         if (!commandSender.hasPermission(this.getPermission())) {
-            commandSender.sendMessage(ChatColor.translateAlternateColorCodes('&', FileUtils.getConfig().getString("command.nopermission")));
+            commandSender.sendMessage(ChatColor.translateAlternateColorCodes('&', FileUtils.getConfig().getString("messages.nopermission")));
             return true; //Does not have the permission
         }
         if (PageHandler.getHelpPages().size() == 0) {
@@ -29,11 +29,13 @@ public class HelpCommandExecutor extends BukkitCommand {
         }
         if (arguments.length >= 1) {
             if (isInteger(arguments[0])) {
-                final int pageNumber = Integer.parseInt(arguments[0]);
+                int pageNumber = Integer.parseInt(arguments[0]);
+                if (Integer.parseInt(arguments[0]) == 0)
+                    pageNumber = 1;
                 HelpPage helpPage = null;
-                if (PageHandler.getHelpPages().size() >= (pageNumber - 1))
+                if (PageHandler.getHelpPages().size() >= pageNumber)
                     helpPage = PageHandler.getHelpPages().get(pageNumber - 1);
-                if (helpPage != null && PageHandler.getHelpPages().get(pageNumber - 1).hasLines()) {
+                if (helpPage != null && helpPage.hasLines()) {
                     helpPage.print(commandSender);
                 } else {
                     commandSender.sendMessage(ChatColor.translateAlternateColorCodes('&', FileUtils.getConfig().getString("messages.notfound")));
