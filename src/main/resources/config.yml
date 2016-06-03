@@ -1,0 +1,25 @@
+command:
+  name: "help"
+  permission: "help"
+  description: "You need help? Use this command!"
+  usage: "/help <page>"
+  nopermission: "&cYou do not have the permission to do this!"
+  aliases:
+    - "helpme"
+    - "simplehelp"
+    - "mysimplehelp"
+messages:
+  nopages: "&cNo pages were found..."
+  invalid: "&cThe page number has to be a valid integer."
+  notfound: "&cThe requested page number was not found."
+pages:
+  page-1:
+    - "&b     ----- &f[ &lHelp &r&f] &b-----     "
+    - "&f&o  This is an example of the help &r&b&opage 1"
+    - "&f&o  You can also try the second help page &r&b&o/help 2"
+    - "&b     ----- &f[ &lHelp &r&f] &b-----     "
+  page-2:
+    - "&b     ----- &f[ &lHelp 2 &r&f] &b-----     "
+    - "&f&o  This is an example of the help &r&b&opage 2"
+    - "&f&o  You can also try the second help page &r&b&o/help 1"
+    - "&b     ----- &f[ &lHelp 2 &r&f] &b-----     "
