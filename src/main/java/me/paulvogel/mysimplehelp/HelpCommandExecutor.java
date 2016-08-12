@@ -30,7 +30,7 @@ public class HelpCommandExecutor extends BukkitCommand {
         if (arguments.length >= 1) {
             if (isInteger(arguments[0])) {
                 int pageNumber = Integer.parseInt(arguments[0]);
-                if (Integer.parseInt(arguments[0]) == 0)
+                if (Integer.parseInt(arguments[0]) <= 0)
                     pageNumber = 1;
                 HelpPage helpPage = null;
                 if (PageHandler.getHelpPages().size() >= pageNumber)
