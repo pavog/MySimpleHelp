@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/pavog/MySimpleHelp.png?label=ready&title=Ready)](https://waffle.io/pavog/MySimpleHelp)
 ![MySimpleHelp](https://github.com/pavog/MySimpleHelp/blob/master/logo.png)
 =========
 
