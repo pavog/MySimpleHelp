@@ -6,6 +6,9 @@ MySimpleHelp
 This Spigot plugin provides an easy way to display custom help messages to your users.
 It's fully configurable, plug and play ready and easy to use.
 
+[Visit on Spigot](https://www.spigotmc.org/resources/mysimplehelp.27781/ "MySimpleHelp - Spigot")
+
+
 # Features
 - Configure the main command /<command> (e.g. /help)
 - Configure the command aliases
